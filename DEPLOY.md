@@ -29,7 +29,11 @@
     ```
 
 2.  **Import to Vercel:**
-    - Dashboard -> Add New Project -> Select this repo.
+    3.  **Configure Project Settings (Critical):**
+    *   **Framework Preset:** Select **Other**. (Do NOT use "Hono" default if suggested, as it may conflict with our custom `vercel.json`).
+    *   **Build Command:** `npm run build`
+    *   **Output Directory:** `dist`
+    *   **Install Command:** `npm install`
 
 3.  **Environment Variables:**
     - Copy from your local `.env`.
